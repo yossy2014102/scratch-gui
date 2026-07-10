@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import wetherIconURL from './wether/wether.png'
+import wetherInsetIconURL from './wether/wether_small.png'
+
 export default [
     {
         name: (
@@ -317,5 +320,27 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Wether"
+                description="wether extensions name"
+                id="gui.extension.wether.name"
+            />
+        ),
+        extensionId: 'openMeteo',
+        iconURL: wetherIconURL,
+        insetIconURL: wetherInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Get the weather forecast"
+                description="Wether Extensions Description"
+                id="gui.extension.wether.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true,
+        collaborator: 'OpenMeteo',
     }
 ];
